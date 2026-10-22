@@ -14,7 +14,7 @@ const IMAGE_ASSETS = {
 
 const BUSINESS_DATA = {
   Home: {
-    eyebrow: "One group · Six business verticals",
+    eyebrow: "One group · Diverse business verticals",
     title: "One Group. Multiple Ways to Grow.",
     highlight: "Grow.",
     description:
@@ -25,7 +25,7 @@ const BUSINESS_DATA = {
     imageAlt: "SappCo business ecosystem",
     primaryCta: "Explore Our Businesses",
     secondaryCta: "Connect With SappCo",
-    introTitle: "Six verticals. One commitment to progress.",
+    introTitle: "Diverse verticals. One commitment to progress.",
     intro:
       "A connected group with distinct business units, each focused on understanding customer needs and helping turn opportunities into practical action.",
     offerings: [
@@ -309,7 +309,7 @@ function App() {
   const faqs = [
     {
       question: "What is SappCo?",
-      answer: "SappCo is a parent brand bringing together six business verticals: Education, Consulting, ECommerce, Export, Energy and Retail.",
+      answer: "SappCo is a parent brand bringing together diverse business verticals: Education, Consulting, ECommerce, Export, Energy and Retail.",
     },
     {
       question: "Do the business verticals have separate services?",
@@ -758,7 +758,7 @@ function App() {
       <footer className="site-footer">
         <div className="container footer-main">
           <button className="brand footer-brand" onClick={() => selectTab("Home")} aria-label="SappCo home">
-            <span className="brand-symbol">S</span><span className="brand-copy"><strong>SAPPCO</strong><small>One group. Six verticals.</small></span>
+            <span className="brand-symbol">S</span><span className="brand-copy"><strong>SAPPCO</strong><small>One group. Diverse verticals.</small></span>
           </button>
           <p>Connecting expertise, opportunities and execution.</p>
           <button className="footer-top-link" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Back to top ↑</button>
