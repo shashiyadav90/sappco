@@ -328,13 +328,20 @@ function App() {
     <div className="site-shell">
       <header className="site-header">
         <div className="container header-main">
-          <button className="brand" onClick={() => selectTab("Home")} aria-label="SappCo home">
+
+          <button
+            className="brand"
+            onClick={() => selectTab("Home")}
+            aria-label="SappCo home"
+          >
             <span className="brand-symbol">S</span>
+
             <span className="brand-copy">
               <strong>SAPPCO</strong>
               <small>One group. Six verticals.</small>
             </span>
           </button>
+
 
           <button
             className={`mobile-toggle ${mobileMenuOpen ? "is-open" : ""}`}
@@ -395,26 +402,62 @@ function App() {
               </div>
             </div>
 
-            <div className="hero-art reveal reveal-delay">
-              <div className="image-halo" />
-              <div className="hero-image-frame">
-                <img
-                  src={business.image}
-                  alt={business.imageAlt}
-                  onError={(event) => { event.currentTarget.style.display = "none"; event.currentTarget.parentElement.classList.add("image-fallback"); }}
-                />
-                <div className="image-fallback-content">
-                  <span className="fallback-orbit orbit-a" />
-                  <span className="fallback-orbit orbit-b" />
-                  <div className="fallback-logo">S</div>
-                  <strong>{activeTab === "Home" ? "SappCo ecosystem" : `SappCo ${activeTab}`}</strong>
-                  <small>{activeTab === "Home" ? "One group · multiple growth opportunities" : business.eyebrow}</small>
-                </div>
-                <div className="image-caption"><span className="caption-dot" /> {activeTab === "Home" ? "One connected ecosystem" : `${activeTab} · SappCo`}</div>
-              </div>
-              <div className="floating-note floating-note-top"><span className="note-icon">✳</span><div><b>Purpose-led</b><small>Customer-focused thinking</small></div></div>
-              <div className="floating-note floating-note-bottom"><span className="note-icon note-icon-dark">↗</span><div><b>Practical by design</b><small>From opportunity to action</small></div></div>
-            </div>
+            
+<div className="hero-art reveal reveal-delay">
+  <div className="image-halo" />
+
+  <div className="hero-image-frame">
+    <img
+      src={business.image}
+      alt={business.imageAlt}
+      onError={(event) => {
+        event.currentTarget.style.display = "none";
+        event.currentTarget.parentElement.classList.add("image-fallback");
+      }}
+    />
+
+    <div className="image-fallback-content">
+      <span className="fallback-orbit orbit-a" />
+      <span className="fallback-orbit orbit-b" />
+
+      <div className="fallback-logo">S</div>
+
+      <strong>
+        {activeTab === "Home" ? "SappCo ecosystem" : `SappCo ${activeTab}`}
+      </strong>
+
+      <small>
+        {activeTab === "Home"
+          ? "One group · multiple growth opportunities"
+          : business.eyebrow}
+      </small>
+    </div>
+
+    <div className="image-caption">
+      <span className="caption-dot" />
+      {activeTab === "Home"
+        ? "One connected ecosystem"
+        : `${activeTab} · SappCo`}
+    </div>
+  </div>
+
+  <div className="floating-note floating-note-top">
+    <span className="note-icon">✳</span>
+    <div>
+      <b>Purpose-led</b>
+      <small>Customer-focused thinking</small>
+    </div>
+  </div>
+
+  <div className="floating-note floating-note-bottom">
+    <span className="note-icon note-icon-dark">↗</span>
+    <div>
+      <b>Practical by design</b>
+      <small>From opportunity to action</small>
+    </div>
+  </div>
+</div>
+
           </div>
           <div className="container hero-bottom">
             <span>EDUCATION</span><i /><span>CONSULTING</span><i /><span>ECOMMERCE</span><i /><span>EXPORT</span><i /><span>ENERGY</span><i /><span>RETAIL</span>
@@ -611,7 +654,7 @@ function App() {
           <div>{BUSINESS_TABS.filter((tab) => tab !== "Home").map((tab) => <button key={tab} onClick={() => selectTab(tab)}>{tab}</button>)}</div>
         </div>
       </footer>
-      
+
     </div>
   );
 }
