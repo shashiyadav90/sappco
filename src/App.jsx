@@ -281,6 +281,7 @@ function App() {
   const [activeTab, setActiveTab] = useState("Home");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState(0);
+  const [openPerspective, setOpenPerspective] = useState(-1);
   const [submitted, setSubmitted] = useState(false);
   const business = BUSINESS_DATA[activeTab];
 
@@ -368,6 +369,7 @@ function App() {
             </button>
           </nav>
         </div>
+        {/*
         <div className="header-bottom">
           <div className="container header-bottom-inner">
             <span className="live-dot" />
@@ -376,6 +378,7 @@ function App() {
             <span className="header-meta">Ideas into action <b>·</b> Opportunities into growth</span>
           </div>
         </div>
+        */}
       </header>
 
       <main key={activeTab} className="page-content">
@@ -464,37 +467,28 @@ function App() {
           </div>
         </section>
 
-        {activeTab === "Home" ? (
-          <section className="section business-section" id="businesses">
-            <div className="container">
-              <div className="section-heading reveal">
-                <div className="eyebrow"><span className="eyebrow-line" />Our businesses</div>
-                <h2>{business.introTitle}</h2>
-                <p>{business.intro}</p>
-              </div>
-              <div className="business-grid">
-                {business.offerings.map((item, index) => (
-                  <button className={`business-card reveal delay-${index % 3}`} key={item.title} onClick={() => selectTab(item.tab)}>
-                    <div className="business-card-top"><span className="business-icon">{item.icon}</span><span className="card-number">0{index + 1}</span></div>
-                    <h3>{item.title}</h3>
-                    <p>{item.description}</p>
-                    <span className="card-link">Explore vertical <b>↗</b></span>
-                  </button>
-                ))}
-              </div>
-            </div>
-          </section>
-        ) : (
+
+        {activeTab !== "Home" && (
           <>
             <section className="section intro-section">
               <div className="container intro-grid">
                 <div className="intro-heading reveal">
-                  <div className="eyebrow"><span className="eyebrow-line" />What we believe</div>
+                  <div className="eyebrow">
+                    <span className="eyebrow-line" />
+                    What we believe
+                  </div>
                   <h2>{business.introTitle}</h2>
                 </div>
+
                 <div className="intro-body reveal reveal-delay">
                   <p>{business.intro}</p>
-                  <div className="intro-signature"><span className="signature-mark">S</span><span><b>SappCo {activeTab}</b><small>Part of the SappCo group</small></span></div>
+                  <div className="intro-signature">
+                    <span className="signature-mark">S</span>
+                    <span>
+                      <b>SappCo {activeTab}</b>
+                      <small>Part of the SappCo group</small>
+                    </span>
+                  </div>
                 </div>
               </div>
             </section>
@@ -502,17 +496,35 @@ function App() {
             <section className="section offerings-section" id="offerings">
               <div className="container">
                 <div className="section-heading section-heading-row reveal">
-                  <div><div className="eyebrow"><span className="eyebrow-line" />What we offer</div><h2>Solutions shaped around your needs.</h2></div>
-                  <p>Explore the areas where SappCo {activeTab} aims to help. Final scope can be tailored to your requirements and confirmed during an initial conversation.</p>
+                  <div>
+                    <div className="eyebrow">
+                      <span className="eyebrow-line" />
+                      What we offer
+                    </div>
+                    <h2>Solutions shaped around your needs.</h2>
+                  </div>
+                  <p>
+                    Explore the areas where SappCo {activeTab} aims to help.
+                    Final scope can be tailored to your requirements and
+                    confirmed during an initial conversation.
+                  </p>
                 </div>
+
                 <div className="offerings-grid">
                   {business.offerings.map((item, index) => (
-                    <article className={`offering-card reveal delay-${index % 3}`} key={item.title}>
+                    <article
+                      className={`offering-card reveal delay-${index % 3}`}
+                      key={item.title}
+                    >
                       <div className="offering-icon">{item.icon}</div>
-                      <span className="offering-number">0{index + 1}</span>
+                      <span className="offering-number">
+                        0{index + 1}
+                      </span>
                       <h3>{item.title}</h3>
                       <p>{item.description}</p>
-                      <button className="inline-link" onClick={jumpToContact}>Discuss this service <span>↗</span></button>
+                      <button className="inline-link" onClick={jumpToContact}>
+                        Discuss this service <span>↗</span>
+                      </button>
                     </article>
                   ))}
                 </div>
@@ -520,6 +532,7 @@ function App() {
             </section>
           </>
         )}
+
 
         <section className="audience-section section">
           <div className="container audience-layout">
@@ -565,46 +578,147 @@ function App() {
           </div>
         </section>
 
-        <section className="why-section">
-          <div className="container why-grid">
-            <div className="why-copy reveal">
-              <div className="eyebrow eyebrow-light"><span className="eyebrow-line" />The SappCo perspective</div>
-              <h2>Connected thinking.<br /><em>Distinct expertise.</em></h2>
-              <p>SappCo brings a broader business perspective while keeping each vertical focused on its audience, goals and requirements.</p>
-            </div>
-            <div className="why-points reveal reveal-delay">
-              {[
-                ["01", "A diverse business perspective", "A portfolio designed to address different market needs."],
-                ["02", "Solutions built around requirements", "An approach that begins by understanding the customer and the challenge."],
-                ["03", "Collaboration & partnerships", "Engagement with relevant experts, businesses and ecosystem partners."],
-                ["04", "Focus on practical outcomes", "An emphasis on translating ideas and opportunities into actionable solutions."],
-              ].map(([num, title, desc]) => (
-                <div className="why-point" key={num}><span>{num}</span><div><h3>{title}</h3><p>{desc}</p></div><b>↗</b></div>
-              ))}
-            </div>
-          </div>
-        </section>
+        
+<section className="section perspective-faq-section">
+  <div className="container">
+    <div className="perspective-faq-box">
 
-        <section className="section faq-section">
-          <div className="container faq-layout">
-            <div className="faq-heading reveal">
-              <div className="eyebrow"><span className="eyebrow-line" />Good to know</div>
-              <h2>Your questions,<br /><em>answered.</em></h2>
-              <p>Have a specific requirement? Our team can help direct you to the right business vertical.</p>
-              <button className="inline-link" onClick={jumpToContact}>Ask us a question <span>↗</span></button>
+      {/* LEFT COLUMN: THE SAPPCO PERSPECTIVE */}
+      <div className="perspective-column">
+        <div className="eyebrow scroll-reveal">
+          <span className="eyebrow-line" />
+          The SappCo perspective
+        </div>
+
+        <h2 className="perspective-title scroll-reveal reveal-delay-1">
+          Connected thinking.
+          <br />
+          <em>Distinct expertise.</em>
+        </h2>
+
+        <p className="perspective-description scroll-reveal reveal-delay-2">
+          SappCo brings a broader business perspective while keeping
+          each vertical focused on its audience, goals and requirements.
+        </p>
+
+        
+<div className="perspective-points">
+  {[
+    [
+      "01",
+      "A diverse business perspective",
+      "A portfolio designed to address different market needs.",
+    ],
+    [
+      "02",
+      "Solutions built around requirements",
+      "An approach that begins by understanding the customer and the challenge.",
+    ],
+    [
+      "03",
+      "Collaboration & partnerships",
+      "Engagement with relevant experts, businesses and ecosystem partners.",
+    ],
+    [
+      "04",
+      "Focus on practical outcomes",
+      "An emphasis on translating ideas and opportunities into actionable solutions.",
+    ],
+  ].map(([num, title, desc], index) => (
+    <div
+      className={`perspective-point ${
+        openPerspective === index ? "perspective-open" : ""
+      }`}
+      key={num}
+    >
+      <span className="perspective-number">{num}</span>
+
+      <button
+        type="button"
+        className="perspective-toggle"
+        onClick={() =>
+          setOpenPerspective(openPerspective === index ? -1 : index)
+        }
+        aria-expanded={openPerspective === index}
+      >
+        <span className="perspective-point-content">
+          <span className="perspective-point-title">{title}</span>
+
+          {openPerspective === index && (
+            <span className="perspective-point-description">
+              {desc}
+            </span>
+          )}
+        </span>
+
+        <span className="perspective-arrow">
+          {openPerspective === index ? "−" : "+"}
+        </span>
+      </button>
+    </div>
+  ))}
+</div>
+
+      </div>
+
+      {/* RIGHT COLUMN: FREQUENTLY ASKED QUESTIONS */}
+      <div className="combined-faq-column">
+        <div className="eyebrow scroll-reveal">
+          <span className="eyebrow-line" />
+          Good to know
+        </div>
+
+        <h2 className="faq-title scroll-reveal reveal-delay-1">
+          Your questions,
+          <br />
+          <em>answered.</em>
+        </h2>
+
+        <p className="faq-description scroll-reveal reveal-delay-2">
+          Have a specific requirement? Our team can help direct you
+          to the right business vertical.
+        </p>
+
+        {/*
+        <button
+          className="inline-link faq-contact-link scroll-reveal reveal-delay-3"
+          onClick={jumpToContact}
+        >
+          Ask us a question <span>↗</span>
+        </button>
+        */}
+
+        <div className="combined-faq-list">
+          {faqs.map((faq, index) => (
+            <div
+              className={`combined-faq-item scroll-reveal reveal-delay-${Math.min(
+                index + 1,
+                4
+              )} ${openFaq === index ? "faq-open" : ""}`}
+              key={faq.question}
+            >
+              <button
+                className="combined-faq-question"
+                onClick={() =>
+                  setOpenFaq(openFaq === index ? -1 : index)
+                }
+                aria-expanded={openFaq === index}
+              >
+                <span>{faq.question}</span>
+                <b>{openFaq === index ? "−" : "+"}</b>
+              </button>
+
+              {openFaq === index && (
+                <p className="combined-faq-answer">{faq.answer}</p>
+              )}
             </div>
-            <div className="faq-list reveal reveal-delay">
-              {faqs.map((faq, index) => (
-                <div className={`faq-item ${openFaq === index ? "faq-open" : ""}`} key={faq.question}>
-                  <button onClick={() => setOpenFaq(openFaq === index ? -1 : index)} aria-expanded={openFaq === index}>
-                    <span>{faq.question}</span><b>{openFaq === index ? "−" : "+"}</b>
-                  </button>
-                  {openFaq === index && <p>{faq.answer}</p>}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+          ))}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
         <section className="contact-section" id="contact">
           <div className="contact-glow" />

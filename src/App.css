@@ -304,35 +304,35 @@ img {
 
 .brand-symbol {
 
-  display: grid;
+    display: grid;
 
-  place-items: center;
+    place-items: center;
 
-  width: 43px;
+    width: 43px;
 
-  height: 43px;
+    height: 43px;
 
-  min-width: 43px;
+    min-width: 43px;
 
-  aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1;
 
-  border-radius: 50% !important;
+    border-radius: 50% !important;
 
-  box-sizing: border-box;
+    box-sizing: border-box;
 
-  color: #000000 !important;
+    color: #000000 !important;
 
-  -webkit-text-fill-color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
 
-  font: 800 1.35rem Manrope, sans-serif;
+    font: 800 1.35rem Manrope, sans-serif;
 
-  background: #FFB923 !important;
+    background: #FFB923 !important;
 
-  border: 2px solid #000000 !important;
+    border: 2px solid #000000 !important;
 
-  box-shadow: none !important;
+    box-shadow: none !important;
 
-  flex-shrink: 0;
+    flex-shrink: 0;
 
 }
 
@@ -346,9 +346,9 @@ img {
 
 .brand-copy {
 
-  display: grid;
+    display: grid;
 
-  line-height: 1.2;
+    line-height: 1.2;
 
 }
 
@@ -356,11 +356,11 @@ img {
 
 .brand-copy strong {
 
-  font: 800 1.15rem Manrope, sans-serif;
+    font: 800 1.15rem Manrope, sans-serif;
 
-  letter-spacing: 1.4px;
+    letter-spacing: 1.4px;
 
-  color: #000000 !important;
+    color: #000000 !important;
 
 }
 
@@ -368,19 +368,19 @@ img {
 
 .brand-copy small {
 
-  margin-top: 4px;
+    margin-top: 4px;
 
-  color: #000000 !important;
+    color: #000000 !important;
 
-  -webkit-text-fill-color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
 
-  font-size: .67rem;
+    font-size: .67rem;
 
-  font-weight: 600;
+    font-weight: 600;
 
-  letter-spacing: .1px;
+    letter-spacing: .1px;
 
-  opacity: 1 !important;
+    opacity: 1 !important;
 
 }
 
@@ -3736,19 +3736,19 @@ img {
 
 
 
-.brand-symbol {
+    .brand-symbol {
 
-  width: 39px;
+        width: 39px;
 
-  height: 39px;
+        height: 39px;
 
-  min-width: 39px;
+        min-width: 39px;
 
-  aspect-ratio: 1 / 1;
+        aspect-ratio: 1 / 1;
 
-  border-radius: 50% !important;
+        border-radius: 50% !important;
 
-}
+    }
 
 
 
@@ -4426,9 +4426,9 @@ img {
 
 .hero-image-frame.image-fallback .image-fallback-content {
 
-  color: #000000 !important;
+    color: #000000 !important;
 
-  text-align: center;
+    text-align: center;
 
 }
 
@@ -4436,15 +4436,15 @@ img {
 
 .hero-image-frame.image-fallback .image-fallback-content strong {
 
-  color: #000000 !important;
+    color: #000000 !important;
 
-  -webkit-text-fill-color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
 
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 
-  font-weight: 800;
+    font-weight: 800;
 
-  opacity: 1 !important;
+    opacity: 1 !important;
 
 }
 
@@ -4454,19 +4454,19 @@ img {
 
 .hero-image-frame.image-fallback .image-fallback-content small {
 
-  color: #000000 !important;
+    color: #000000 !important;
 
-  -webkit-text-fill-color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
 
-  font-size: 0.8rem;
+    font-size: 0.8rem;
 
-  font-weight: 600;
+    font-weight: 600;
 
-  opacity: 1 !important;
+    opacity: 1 !important;
 
-  line-height: 1.6;
+    line-height: 1.6;
 
-  padding-inline: 12px;
+    padding-inline: 12px;
 
 }
 
@@ -4477,20 +4477,24 @@ img {
 
 
 :root {
-  --text: #21180E;
-  --muted: #5B5146;
-  --primary: #754000;
-  --primary-dark: #4D2A00;
-  --primary-deep: #17120C;
-  --primary-bright: #9A5B00;
-  --accent: #FFE3A1;
-  --accent-warm: #C98208;
-  --line: #E8D3AD;
+    --text: #21180E;
+    --muted: #5B5146;
+    --primary: #754000;
+    --primary-dark: #4D2A00;
+    --primary-deep: #17120C;
+    --primary-bright: #9A5B00;
+    --accent: #FFE3A1;
+    --accent-warm: #C98208;
+    --line: #E8D3AD;
 }
 
-body, button, input, select, textarea {
-  font-family: "DM Sans", Arial, sans-serif;
-  letter-spacing: 0.005em;
+body,
+button,
+input,
+select,
+textarea {
+    font-family: "DM Sans", Arial, sans-serif;
+    letter-spacing: 0.005em;
 }
 
 .brand-copy strong,
@@ -4504,16 +4508,37 @@ body, button, input, select, textarea {
 .business-card h3,
 .offering-card h3,
 .process-card h3 {
-  font-family: "Manrope", sans-serif;
-  letter-spacing: -0.035em;
+    font-family: "Manrope", sans-serif;
+    letter-spacing: -0.035em;
 }
 
-.brand-copy strong { font-size: 1.28rem; letter-spacing: 0.075em; }
-.brand-copy small { font-size: 0.78rem; }
-.nav-tab { font-size: 0.91rem; font-weight: 700; }
-.button { font-size: 0.96rem; font-weight: 800; }
-.header-bottom-inner { font-size: 0.77rem; }
-.eyebrow { font-size: 0.79rem; letter-spacing: 0.16em; }
+.brand-copy strong {
+    font-size: 1.28rem;
+    letter-spacing: 0.075em;
+}
+
+.brand-copy small {
+    font-size: 0.78rem;
+}
+
+.nav-tab {
+    font-size: 0.91rem;
+    font-weight: 700;
+}
+
+.button {
+    font-size: 0.96rem;
+    font-weight: 800;
+}
+
+.header-bottom-inner {
+    font-size: 0.77rem;
+}
+
+.eyebrow {
+    font-size: 0.79rem;
+    letter-spacing: 0.16em;
+}
 
 .hero h1,
 .section-heading h2,
@@ -4522,64 +4547,869 @@ body, button, input, select, textarea {
 .why-copy h2,
 .faq-heading h2,
 .contact-copy h2 {
-  font-weight: 800;
-  text-wrap: balance;
+    font-weight: 800;
+    text-wrap: balance;
 }
 
-.hero h1 { font-size: clamp(3.15rem, 4.65vw, 5rem); line-height: 1.04; letter-spacing: -0.055em; }
+.hero h1 {
+    font-size: clamp(3.15rem, 4.65vw, 5rem);
+    line-height: 1.04;
+    letter-spacing: -0.055em;
+}
+
 .section-heading h2,
 .intro-heading h2,
 .audience-copy h2,
-.faq-heading h2 { font-size: clamp(2.45rem, 3.5vw, 3.65rem); line-height: 1.12; }
+.faq-heading h2 {
+    font-size: clamp(2.45rem, 3.5vw, 3.65rem);
+    line-height: 1.12;
+}
+
 .why-copy h2,
-.contact-copy h2 { font-size: clamp(2.9rem, 4vw, 4.15rem); line-height: 1.1; }
-.hero-description { font-size: 1.13rem; line-height: 1.9; color: #392817; }
-.hero-secondary { font-size: 1rem; line-height: 1.9; color: #493725; }
-.section-heading > p,
-.section-heading-row > p,
-.intro-body > p,
-.audience-copy > p,
-.why-copy > p,
-.faq-heading > p,
-.contact-copy > p { font-size: 1.06rem; line-height: 1.9; }
-.business-card h3, .offering-card h3, .process-card h3 { font-size: 1.19rem; font-weight: 800; }
-.business-card p, .offering-card p, .process-card p { font-size: 0.98rem; line-height: 1.85; }
-.card-link, .inline-link { font-size: 0.88rem; font-weight: 800; }
-.audience-item { font-size: 1.02rem; }
-.process-top { font-size: 0.88rem; }
-.floating-note b { font-size: 0.88rem; }
-.floating-note small { font-size: 0.76rem; }
-.image-caption { font-size: 0.82rem; }
+.contact-copy h2 {
+    font-size: clamp(2.9rem, 4vw, 4.15rem);
+    line-height: 1.1;
+}
+
+.hero-description {
+    font-size: 1.13rem;
+    line-height: 1.9;
+    color: #392817;
+}
+
+.hero-secondary {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: #493725;
+}
+
+.section-heading>p,
+.section-heading-row>p,
+.intro-body>p,
+.audience-copy>p,
+.why-copy>p,
+.faq-heading>p,
+.contact-copy>p {
+    font-size: 1.06rem;
+    line-height: 1.9;
+}
+
+.business-card h3,
+.offering-card h3,
+.process-card h3 {
+    font-size: 1.19rem;
+    font-weight: 800;
+}
+
+.business-card p,
+.offering-card p,
+.process-card p {
+    font-size: 0.98rem;
+    line-height: 1.85;
+}
+
+.card-link,
+.inline-link {
+    font-size: 0.88rem;
+    font-weight: 800;
+}
+
+.audience-item {
+    font-size: 1.02rem;
+}
+
+.process-top {
+    font-size: 0.88rem;
+}
+
+.floating-note b {
+    font-size: 0.88rem;
+}
+
+.floating-note small {
+    font-size: 0.76rem;
+}
+
+.image-caption {
+    font-size: 0.82rem;
+}
 
 /* Warm, high-contrast emphasis for the active business headline,
    including “Smarter Energy Solutions” on the Energy page. */
 .hero h1 em,
 .faq-heading h2 em {
-  color: #633600 !important;
-  -webkit-text-fill-color: #633600 !important;
-  font-style: normal;
-  font-weight: 800;
-  text-decoration: underline;
-  text-decoration-color: rgba(99, 54, 0, 0.24);
-  text-decoration-thickness: 0.07em;
-  text-underline-offset: 0.12em;
+    color: #633600 !important;
+    -webkit-text-fill-color: #633600 !important;
+    font-style: normal;
+    font-weight: 800;
+    text-decoration: underline;
+    text-decoration-color: rgba(99, 54, 0, 0.24);
+    text-decoration-thickness: 0.07em;
+    text-underline-offset: 0.12em;
 }
 
-.eyebrow, .card-link, .inline-link, .audience-index,
-.process-top > span { color: #754000; }
-.nav-tab.active { color: #4D2A00; }
-.button { text-shadow: 0 1px 0 rgba(0,0,0,0.08); }
+.eyebrow,
+.card-link,
+.inline-link,
+.audience-index,
+.process-top>span {
+    color: #754000;
+}
+
+.nav-tab.active {
+    color: #4D2A00;
+}
+
+.button {
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+}
 
 @media (max-width: 900px) {
-  .hero h1 { font-size: clamp(2.65rem, 7vw, 4rem); }
-  .section-heading h2, .intro-heading h2, .audience-copy h2,
-  .faq-heading h2 { font-size: clamp(2.1rem, 5.6vw, 3.1rem); }
-  .why-copy h2, .contact-copy h2 { font-size: clamp(2.45rem, 6vw, 3.6rem); }
+    .hero h1 {
+        font-size: clamp(2.65rem, 7vw, 4rem);
+    }
+
+    .section-heading h2,
+    .intro-heading h2,
+    .audience-copy h2,
+    .faq-heading h2 {
+        font-size: clamp(2.1rem, 5.6vw, 3.1rem);
+    }
+
+    .why-copy h2,
+    .contact-copy h2 {
+        font-size: clamp(2.45rem, 6vw, 3.6rem);
+    }
 }
+
 @media (max-width: 560px) {
-  .hero h1 { font-size: clamp(2.35rem, 10vw, 3.2rem); letter-spacing: -0.045em; }
-  .hero-description { font-size: 1.02rem; }
-  .hero-secondary, .section-heading > p, .section-heading-row > p,
-  .intro-body > p, .audience-copy > p, .why-copy > p { font-size: 0.98rem; }
-  .nav-tab { font-size: 0.95rem; }
+    .hero h1 {
+        font-size: clamp(2.35rem, 10vw, 3.2rem);
+        letter-spacing: -0.045em;
+    }
+
+    .hero-description {
+        font-size: 1.02rem;
+    }
+
+    .hero-secondary,
+    .section-heading>p,
+    .section-heading-row>p,
+    .intro-body>p,
+    .audience-copy>p,
+    .why-copy>p {
+        font-size: 0.98rem;
+    }
+
+    .nav-tab {
+        font-size: 0.95rem;
+    }
+}
+
+/* ==========================================
+   SAPPCO PERSPECTIVE + FAQ
+   COMPACT WHITE BOX + BROWN THEME
+========================================== */
+
+/* Keep section background white */
+.perspective-faq-section {
+    background: #ffffff !important;
+    padding: 55px 0;
+    box-sizing: border-box;
+}
+
+/* Smaller main box with equal columns */
+.perspective-faq-box {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+    gap: 42px;
+
+    width: calc(100% - 80px);
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 42px;
+
+    background: #ffffff !important;
+    border: 1px solid #eadcc9;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(92, 57, 27, 0.05);
+    box-sizing: border-box;
+}
+
+.perspective-column,
+.combined-faq-column {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+/* ==========================================
+   HEADINGS + DESCRIPTIONS
+========================================== */
+
+.perspective-faq-box .eyebrow {
+    color: #8b5200 !important;
+}
+
+.perspective-faq-box .eyebrow-line {
+    background: #8b5200 !important;
+}
+
+.perspective-title,
+.faq-title {
+    margin: 16px 0 !important;
+    line-height: 1.2;
+}
+
+.perspective-title em,
+.faq-title em {
+    color: #8b5200 !important;
+}
+
+.perspective-description,
+.faq-description {
+    min-height: 60px;
+    margin: 0 0 20px !important;
+    color: #65594c !important;
+    font-size: 0.97rem;
+    line-height: 1.75;
+}
+
+/* ==========================================
+   LEFT: EXPANDABLE PERSPECTIVE ROWS
+========================================== */
+
+.perspective-points {
+    margin-top: 0 !important;
+    padding: 0;
+    border-top: 1px solid #eadcc9 !important;
+}
+
+.perspective-point {
+    display: grid !important;
+    grid-template-columns: 36px minmax(0, 1fr);
+    align-items: start !important;
+    gap: 12px !important;
+
+    min-height: 82px;
+    padding: 20px 0 !important;
+    box-sizing: border-box;
+
+    border-bottom: 1px solid #eadcc9 !important;
+    transition: background 0.25s ease;
+}
+
+.perspective-number {
+    padding-top: 2px;
+    color: #8b5200 !important;
+    font-size: 0.88rem;
+    font-weight: 700;
+}
+
+.perspective-toggle {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+
+    width: 100%;
+    min-width: 0;
+    padding: 0;
+
+    border: 0;
+    background: transparent !important;
+    color: #29221b !important;
+    text-align: left;
+    cursor: pointer;
+}
+
+.perspective-point-content {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.perspective-point-title {
+    color: #29221b !important;
+    font-size: 0.98rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.perspective-point-description {
+    display: block;
+    color: #65594c !important;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.7;
+    animation: perspectiveAnswerIn 0.25s ease both;
+}
+
+/* Left plus/minus icon */
+.perspective-arrow {
+    display: grid;
+    place-items: center;
+    flex: 0 0 26px;
+
+    width: 26px;
+    height: 26px;
+    margin-top: -2px;
+
+    border-radius: 50%;
+    background: #fff0dc !important;
+    color: #8b5200 !important;
+
+    font-size: 1.2rem !important;
+    font-weight: 500;
+    line-height: 1;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.perspective-toggle:hover .perspective-arrow,
+.perspective-open .perspective-arrow {
+    background: #8b5200 !important;
+    color: #ffffff !important;
+}
+
+.perspective-toggle:focus-visible {
+    outline: 2px solid #8b5200;
+    outline-offset: 4px;
+}
+
+/* ==========================================
+   RIGHT: FAQ ROWS
+========================================== */
+
+.combined-faq-list {
+    margin-top: 0 !important;
+    padding: 0;
+    border-top: 1px solid #eadcc9 !important;
+}
+
+.combined-faq-item {
+    min-width: 0;
+    border-bottom: 1px solid #eadcc9 !important;
+}
+
+/* FAQ titles align at the top like left titles */
+.combined-faq-question {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    min-height: 82px;
+    box-sizing: border-box;
+    padding: 20px 0 !important;
+    border: 0;
+    background: transparent !important;
+    color: #29221b !important;
+    text-align: left;
+    font-size: 0.98rem;
+    font-weight: 600;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.combined-faq-question>span {
+    flex: 1;
+    min-width: 0;
+}
+
+.combined-faq-question b {
+    display: grid;
+    place-items: center;
+    flex: 0 0 26px;
+
+    width: 26px;
+    height: 26px;
+
+    border-radius: 50%;
+    background: #fff0dc !important;
+    color: #8b5200 !important;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.combined-faq-question:hover b {
+    background: #8b5200 !important;
+    color: #ffffff !important;
+}
+
+.combined-faq-answer {
+    margin: -3px 0 18px;
+    padding-right: 12px;
+    color: #65594c !important;
+    font-size: 0.9rem;
+    line-height: 1.75;
+    animation: perspectiveAnswerIn 0.25s ease both;
+}
+
+/* Brown contact link */
+.perspective-faq-box .faq-contact-link {
+    color: #8b5200 !important;
+}
+
+.perspective-faq-box .faq-contact-link:hover {
+    color: #603800 !important;
+}
+
+/* ==========================================
+   EXPAND ANIMATION
+========================================== */
+
+@keyframes perspectiveAnswerIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 900px) {
+    .perspective-faq-section {
+        padding: 40px 0;
+    }
+
+    .perspective-faq-box {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 34px;
+        width: calc(100% - 40px);
+        max-width: 680px;
+        padding: 32px;
+    }
+
+    .perspective-description,
+    .faq-description {
+        min-height: 0;
+    }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 560px) {
+    .perspective-faq-section {
+        padding: 25px 0;
+    }
+
+    .perspective-faq-box {
+        gap: 28px;
+        width: calc(100% - 28px);
+        padding: 23px 18px;
+        border-radius: 15px;
+    }
+
+    .perspective-title,
+    .faq-title {
+        font-size: 1.8rem;
+    }
+
+    .perspective-point {
+        grid-template-columns: 30px minmax(0, 1fr);
+        gap: 10px !important;
+        min-height: 76px;
+        padding: 18px 0 !important;
+    }
+
+    .perspective-point-title {
+        font-size: 0.92rem;
+    }
+
+    .perspective-point-description,
+    .combined-faq-answer {
+        font-size: 0.86rem;
+    }
+
+    .perspective-arrow,
+    .combined-faq-question b {
+        flex-basis: 24px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .combined-faq-question {
+        min-height: 76px;
+        padding: 18px 0 !important;
+        font-size: 0.89rem;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+    .perspective-arrow,
+    .combined-faq-question b {
+        transition: none;
+    }
+
+    .perspective-point-description,
+    .combined-faq-answer {
+        animation: none;
+    }
+}
+
+
+/* ==========================================
+   LARGER BUSINESS NAVIGATION LABELS
+========================================== */
+
+.hero-bottom {
+    font-size: 0.82rem !important;
+    letter-spacing: 1.8px;
+}
+
+.hero-bottom span {
+    font-size: inherit !important;
+    font-weight: 800 !important;
+}
+
+/* ==========================================
+   HERO DESCRIPTION — CONSISTENT TEXT SIZE
+========================================== */
+
+.hero-description,
+.hero-secondary {
+    font-size: 1.03rem !important;
+    line-height: 1.85 !important;
+}
+
+/* ==========================================
+   FOOTNOTE — MATCH HERO DESCRIPTION SIZE
+========================================== */
+
+.hero-footnote p,
+.hero-footnote strong {
+    font-size: 1.03rem !important;
+    line-height: 1.6 !important;
+}
+
+.hero-footnote p {
+    color: #555555 !important;
+}
+
+.hero-footnote strong {
+    color: #222222 !important;
+    font-weight: 700 !important;
+}
+
+/* ==========================================
+   MOBILE RESPONSIVENESS
+========================================== */
+
+@media (max-width: 560px) {
+    .hero-bottom {
+        font-size: 0.68rem !important;
+        letter-spacing: 1.2px;
+    }
+
+    .hero-description,
+    .hero-secondary {
+        font-size: 0.93rem !important;
+    }
+
+    .hero-footnote p,
+    .hero-footnote strong {
+        font-size: 0.93rem !important;
+    }
+}
+
+/* ==========================================
+   SAPPCO FOOTER — WHITE HEADER-MATCHING THEME
+========================================== */
+
+.site-footer {
+    background: #ffffff !important;
+    color: #222222 !important;
+    border-top: 1px solid #eadcc9 !important;
+}
+
+/* Main footer row */
+.footer-main {
+    background: #ffffff !important;
+    border-bottom: 1px solid #eadcc9 !important;
+}
+
+/* Footer logo and brand name */
+.footer-brand .brand-copy strong {
+    color: #222222 !important;
+}
+
+.footer-brand .brand-copy small {
+    color: #555555 !important;
+}
+
+.footer-brand .brand-symbol {
+    background: #ffb923 !important;
+    color: #000000 !important;
+    border: 2px solid #000000 !important;
+}
+
+/* Footer tagline */
+.footer-main>p {
+    color: #555555 !important;
+}
+
+/* Back to top link */
+.footer-top-link {
+    color: #8b5200 !important;
+}
+
+.footer-top-link:hover {
+    color: #603800 !important;
+}
+
+/* Bottom footer row */
+.footer-bottom {
+    background: #ffffff !important;
+    color: #555555 !important;
+}
+
+/* Footer links */
+.footer-bottom button {
+    color: #555555 !important;
+}
+
+.footer-bottom button:hover {
+    color: #8b5200 !important;
+}
+
+/* Keep footer white on all screen sizes */
+@media (max-width: 560px) {
+
+    .site-footer,
+    .footer-main,
+    .footer-bottom {
+        background: #ffffff !important;
+    }
+
+    .footer-main {
+        border-bottom: 1px solid #eadcc9 !important;
+    }
+}
+
+
+/* ==========================================
+   SAPPCO FOOTER — COMPACT WHITE DESIGN
+========================================== */
+
+.site-footer {
+    background: #ffffff !important;
+    color: #29221b !important;
+    border-top: 1px solid #eadcc9 !important;
+    font-size: 0.95rem;
+}
+
+/* Main footer area */
+.footer-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 28px 0 !important;
+    background: #ffffff !important;
+    border-bottom: 1px solid #eee4d8 !important;
+}
+
+/* Footer brand */
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.footer-brand .brand-symbol {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 43px;
+    height: 43px;
+    border: 2px solid #171717 !important;
+    border-radius: 50%;
+    background: #ffb923 !important;
+    color: #171717 !important;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.footer-brand .brand-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footer-brand .brand-copy strong {
+    color: #171717 !important;
+    font-size: 1.18rem;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+}
+
+.footer-brand .brand-copy small {
+    color: #65594c !important;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Footer description */
+.footer-main>p {
+    max-width: 360px;
+    margin: 0;
+    color: #65594c !important;
+    font-size: 0.94rem;
+    line-height: 1.7;
+}
+
+/* Back to top link */
+.footer-top-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    padding: 11px 16px;
+    border: 1px solid #eadcc9;
+    border-radius: 30px;
+    background: #fffaf3;
+    color: #8b5200 !important;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.footer-top-link:hover {
+    background: #8b5200;
+    color: #ffffff !important;
+    border-color: #8b5200;
+    transform: translateY(-2px);
+}
+
+/* Bottom footer row */
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 18px 0 !important;
+    background: #ffffff !important;
+    color: #65594c !important;
+    font-size: 0.88rem;
+    line-height: 1.65;
+}
+
+/* Footer navigation and legal links */
+.footer-bottom a,
+.footer-bottom button {
+    color: #65594c !important;
+    font-size: 0.88rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-bottom a:hover,
+.footer-bottom button:hover {
+    color: #8b5200 !important;
+}
+
+/* Consistent box sizing */
+.footer-main,
+.footer-bottom {
+    box-sizing: border-box;
+}
+
+/* Tablet layout */
+@media (max-width: 900px) {
+    .footer-main {
+        gap: 22px;
+        padding: 25px 0 !important;
+    }
+
+    .footer-main>p {
+        max-width: 300px;
+    }
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .footer-main {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+        padding: 24px 0 !important;
+    }
+
+    .footer-brand .brand-symbol {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+
+    .footer-brand .brand-copy strong {
+        font-size: 1.08rem;
+    }
+
+    .footer-brand .brand-copy small {
+        font-size: 0.86rem;
+    }
+
+    .footer-main>p {
+        max-width: 100%;
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    .footer-top-link {
+        padding: 10px 14px;
+        font-size: 0.86rem;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        padding: 17px 0 !important;
+        font-size: 0.85rem;
+    }
+
+    .footer-bottom a,
+    .footer-bottom button {
+        font-size: 0.85rem;
+    }
+}
+
+
+/* Make Start a Conversation text white */
+.contact-section .eyebrow {
+    color: #ffffff !important;
+}
+
+.contact-section .eyebrow-line {
+    background: #ffffff !important;
 }
