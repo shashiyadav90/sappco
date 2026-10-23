@@ -335,11 +335,12 @@ function App() {
             onClick={() => selectTab("Home")}
             aria-label="SappCo home"
           >
-            <span className="brand-symbol">S</span>
-
             <span className="brand-copy">
-              <strong>SAPPCO</strong>
-              <small>One group. Six verticals.</small>
+              <strong>
+                <span className="brand-name">SappCo</span>{" "}
+                <span className="brand-group">Group</span>
+              </strong>
+              <small>One group. Diverse verticals.</small>
             </span>
           </button>
 
@@ -578,108 +579,107 @@ function App() {
           </div>
         </section>
 
-        
-<section className="section perspective-faq-section">
-  <div className="container">
-    <div className="perspective-faq-box">
 
-      {/* LEFT COLUMN: THE SAPPCO PERSPECTIVE */}
-      <div className="perspective-column">
-        <div className="eyebrow scroll-reveal">
-          <span className="eyebrow-line" />
-          The SappCo perspective
-        </div>
+        <section className="section perspective-faq-section">
+          <div className="container">
+            <div className="perspective-faq-box">
 
-        <h2 className="perspective-title scroll-reveal reveal-delay-1">
-          Connected thinking.
-          <br />
-          <em>Distinct expertise.</em>
-        </h2>
+              {/* LEFT COLUMN: THE SAPPCO PERSPECTIVE */}
+              <div className="perspective-column">
+                <div className="eyebrow scroll-reveal">
+                  <span className="eyebrow-line" />
+                  The SappCo perspective
+                </div>
 
-        <p className="perspective-description scroll-reveal reveal-delay-2">
-          SappCo brings a broader business perspective while keeping
-          each vertical focused on its audience, goals and requirements.
-        </p>
+                <h2 className="perspective-title scroll-reveal reveal-delay-1">
+                  Connected thinking.
+                  <br />
+                  <em>Distinct expertise.</em>
+                </h2>
 
-        
-<div className="perspective-points">
-  {[
-    [
-      "01",
-      "A diverse business perspective",
-      "A portfolio designed to address different market needs.",
-    ],
-    [
-      "02",
-      "Solutions built around requirements",
-      "An approach that begins by understanding the customer and the challenge.",
-    ],
-    [
-      "03",
-      "Collaboration & partnerships",
-      "Engagement with relevant experts, businesses and ecosystem partners.",
-    ],
-    [
-      "04",
-      "Focus on practical outcomes",
-      "An emphasis on translating ideas and opportunities into actionable solutions.",
-    ],
-  ].map(([num, title, desc], index) => (
-    <div
-      className={`perspective-point ${
-        openPerspective === index ? "perspective-open" : ""
-      }`}
-      key={num}
-    >
-      <span className="perspective-number">{num}</span>
+                <p className="perspective-description scroll-reveal reveal-delay-2">
+                  SappCo brings a broader business perspective while keeping
+                  each vertical focused on its audience, goals and requirements.
+                </p>
 
-      <button
-        type="button"
-        className="perspective-toggle"
-        onClick={() =>
-          setOpenPerspective(openPerspective === index ? -1 : index)
-        }
-        aria-expanded={openPerspective === index}
-      >
-        <span className="perspective-point-content">
-          <span className="perspective-point-title">{title}</span>
 
-          {openPerspective === index && (
-            <span className="perspective-point-description">
-              {desc}
-            </span>
-          )}
-        </span>
+                <div className="perspective-points">
+                  {[
+                    [
+                      "01",
+                      "A diverse business perspective",
+                      "A portfolio designed to address different market needs.",
+                    ],
+                    [
+                      "02",
+                      "Solutions built around requirements",
+                      "An approach that begins by understanding the customer and the challenge.",
+                    ],
+                    [
+                      "03",
+                      "Collaboration & partnerships",
+                      "Engagement with relevant experts, businesses and ecosystem partners.",
+                    ],
+                    [
+                      "04",
+                      "Focus on practical outcomes",
+                      "An emphasis on translating ideas and opportunities into actionable solutions.",
+                    ],
+                  ].map(([num, title, desc], index) => (
+                    <div
+                      className={`perspective-point ${openPerspective === index ? "perspective-open" : ""
+                        }`}
+                      key={num}
+                    >
+                      <span className="perspective-number">{num}</span>
 
-        <span className="perspective-arrow">
-          {openPerspective === index ? "−" : "+"}
-        </span>
-      </button>
-    </div>
-  ))}
-</div>
+                      <button
+                        type="button"
+                        className="perspective-toggle"
+                        onClick={() =>
+                          setOpenPerspective(openPerspective === index ? -1 : index)
+                        }
+                        aria-expanded={openPerspective === index}
+                      >
+                        <span className="perspective-point-content">
+                          <span className="perspective-point-title">{title}</span>
 
-      </div>
+                          {openPerspective === index && (
+                            <span className="perspective-point-description">
+                              {desc}
+                            </span>
+                          )}
+                        </span>
 
-      {/* RIGHT COLUMN: FREQUENTLY ASKED QUESTIONS */}
-      <div className="combined-faq-column">
-        <div className="eyebrow scroll-reveal">
-          <span className="eyebrow-line" />
-          Good to know
-        </div>
+                        <span className="perspective-arrow">
+                          {openPerspective === index ? "−" : "+"}
+                        </span>
+                      </button>
+                    </div>
+                  ))}
+                </div>
 
-        <h2 className="faq-title scroll-reveal reveal-delay-1">
-          Your questions,
-          <br />
-          <em>answered.</em>
-        </h2>
+              </div>
 
-        <p className="faq-description scroll-reveal reveal-delay-2">
-          Have a specific requirement? Our team can help direct you
-          to the right business vertical.
-        </p>
+              {/* RIGHT COLUMN: FREQUENTLY ASKED QUESTIONS */}
+              <div className="combined-faq-column">
+                <div className="eyebrow scroll-reveal">
+                  <span className="eyebrow-line" />
+                  Good to know
+                </div>
 
-        {/*
+                <h2 className="faq-title scroll-reveal reveal-delay-1">
+                  Your questions,
+                  <br />
+                  <em>answered.</em>
+                </h2>
+
+                <p className="faq-description scroll-reveal reveal-delay-2">
+                  Have a specific requirement? Our team can help direct you
+                  to the right business vertical.
+                </p>
+
+                {/*
         <button
           className="inline-link faq-contact-link scroll-reveal reveal-delay-3"
           onClick={jumpToContact}
@@ -688,37 +688,37 @@ function App() {
         </button>
         */}
 
-        <div className="combined-faq-list">
-          {faqs.map((faq, index) => (
-            <div
-              className={`combined-faq-item scroll-reveal reveal-delay-${Math.min(
-                index + 1,
-                4
-              )} ${openFaq === index ? "faq-open" : ""}`}
-              key={faq.question}
-            >
-              <button
-                className="combined-faq-question"
-                onClick={() =>
-                  setOpenFaq(openFaq === index ? -1 : index)
-                }
-                aria-expanded={openFaq === index}
-              >
-                <span>{faq.question}</span>
-                <b>{openFaq === index ? "−" : "+"}</b>
-              </button>
+                <div className="combined-faq-list">
+                  {faqs.map((faq, index) => (
+                    <div
+                      className={`combined-faq-item scroll-reveal reveal-delay-${Math.min(
+                        index + 1,
+                        4
+                      )} ${openFaq === index ? "faq-open" : ""}`}
+                      key={faq.question}
+                    >
+                      <button
+                        className="combined-faq-question"
+                        onClick={() =>
+                          setOpenFaq(openFaq === index ? -1 : index)
+                        }
+                        aria-expanded={openFaq === index}
+                      >
+                        <span>{faq.question}</span>
+                        <b>{openFaq === index ? "−" : "+"}</b>
+                      </button>
 
-              {openFaq === index && (
-                <p className="combined-faq-answer">{faq.answer}</p>
-              )}
+                      {openFaq === index && (
+                        <p className="combined-faq-answer">{faq.answer}</p>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
             </div>
-          ))}
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+          </div>
+        </section>
 
         <section className="contact-section" id="contact">
           <div className="contact-glow" />
@@ -758,13 +758,19 @@ function App() {
       <footer className="site-footer">
         <div className="container footer-main">
           <button className="brand footer-brand" onClick={() => selectTab("Home")} aria-label="SappCo home">
-            <span className="brand-symbol">S</span><span className="brand-copy"><strong>SAPPCO</strong><small>One group. Diverse verticals.</small></span>
+            <span className="brand-copy">
+              <strong>
+                <span className="brand-name">SappCo</span>{" "}
+                <span className="brand-group">Group</span>
+              </strong>
+              <small>One group. Diverse verticals.</small>
+            </span>
           </button>
           <p>Connecting expertise, opportunities and execution.</p>
           <button className="footer-top-link" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Back to top ↑</button>
         </div>
         <div className="container footer-bottom">
-          <span>© 2026 SAPPCO. All rights reserved.</span>
+          <span>© 2026 SappCo. All rights reserved.</span>
           <div>{BUSINESS_TABS.filter((tab) => tab !== "Home").map((tab) => <button key={tab} onClick={() => selectTab(tab)}>{tab}</button>)}</div>
         </div>
       </footer>

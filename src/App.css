@@ -809,17 +809,7 @@ img {
 
 
 .eyebrow-line {
-
-    display: inline-block;
-
-    width: 23px;
-
-    height: 2px;
-
-    background: var(--primary-bright);
-
-    border-radius: 9px;
-
+    display: none !important;
 }
 
 
@@ -1388,7 +1378,7 @@ img {
 
 .hero-bottom {
 
-    min-height: 56px;
+    min-height: 70px;
 
     display: flex;
 
@@ -1404,7 +1394,7 @@ img {
 
     font-size: .64rem;
 
-    font-weight: 800;
+    font-weight: 900;
 
     letter-spacing: 1.8px;
 
@@ -1416,7 +1406,7 @@ img {
 
     width: 4px;
 
-    height: 4px;
+    height: 2px;
 
     border-radius: 50%;
 
@@ -2753,19 +2743,18 @@ img {
 
 
 .contact-form {
-
     padding: 31px;
-
-    border: 1px solid rgba(255, 255, 255, .7);
-
+    border: 1px solid #FFFFFF;
     border-radius: 24px;
+    background: #FFFFFF !important;
+    color: #222222;
+    box-shadow: 0 28px 70px rgba(0, 0, 0, 0.16);
+}
 
-    background: #fffaf1;
-
-    color: var(--text);
-
-    box-shadow: 0 28px 70px rgba(0, 0, 0, .16);
-
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    background: #FFFFFF !important;
 }
 
 
@@ -5412,4 +5401,41 @@ textarea {
 
 .contact-section .eyebrow-line {
     background: #ffffff !important;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.brand-copy {
+    display: grid;
+    line-height: 1.2;
+}
+
+.brand-copy strong {
+    font: 800 1.5rem Manrope, sans-serif;
+    letter-spacing: 1px;
+}
+
+.brand-name {
+    color: #176B45 !important;
+}
+
+.brand-group {
+    color: #000000 !important;
+}
+
+.brand-copy small {
+    margin-top: 5px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000;
 }
