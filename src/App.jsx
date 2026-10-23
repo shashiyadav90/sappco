@@ -584,7 +584,7 @@ function App() {
           <div className="container">
             <div className="perspective-faq-box">
 
-              {/* LEFT COLUMN: THE SAPPCO PERSPECTIVE */}
+              {/* LEFT COLUMN: THE SappCo PERSPECTIVE */}
               <div className="perspective-column">
                 <div className="eyebrow scroll-reveal">
                   <span className="eyebrow-line" />
@@ -727,7 +727,7 @@ function App() {
               <div className="eyebrow eyebrow-light"><span className="eyebrow-line" />Start a conversation</div>
               <h2>{business.closingTitle}</h2>
               <p>{business.closingText}</p>
-              <div className="contact-detail"><span className="contact-detail-icon">✉</span><div><small>Contact SappCo</small><a href="mailto:hello@sappco.in">hello@sappco.in</a></div></div>
+              <div className="contact-detail"><span className="contact-detail-icon">✉</span><div><small>Contact SappCo</small><a href="mailto:contact@sappco.in">contact@sappco.in</a></div></div>
               <div className="contact-detail"><span className="contact-detail-icon">↗</span><div><small>Selected business</small><b>{activeTab === "Home" ? "SappCo Group" : `SappCo ${activeTab}`}</b></div></div>
               {business.note && <p className="service-note">{business.note}</p>}
             </div>
